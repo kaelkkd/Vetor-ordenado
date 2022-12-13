@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "vetor_ord.h"
 
-//FunÃ§Ã£o de comparaÃ§Ã£o
+//Função de comparação
 int myCOMP(void* x, void* y){
 	int ptx = *((int*)x);
 	int pty = *((int*)y);
@@ -40,8 +40,8 @@ int main(){
 	}
 	
 	print(vet->elems, vet->numElems);
-  printf("REMOVENDO!");
-  VETORD_remove(vet);
+  	printf("REMOVENDO!");
+  	VETORD_remove(vet);
 	print(vet->elems, vet->numElems);
    
 	return 0;  
